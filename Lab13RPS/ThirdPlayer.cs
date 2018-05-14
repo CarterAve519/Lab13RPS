@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    class Player2
+    class ThirdPlayer
     {
-        private string rock;
-
-
-        public string Rock { get => rock; set => rock = value; }
-    }    
+    }
 }

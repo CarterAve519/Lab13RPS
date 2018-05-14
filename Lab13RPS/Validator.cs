@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    class Player1
+    class Validator
     {
+
     }
 }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    abstract class PlayerParent
+    abstract class Player
     {
         private string name;
         private Roshambo game;
 
-        public string Name { get => name; set => name = value; }
-        internal Roshambo Game { get => game; set => game = value; }
+        public string Name { get; set; }
+        public Roshambo Game { get; set; }
+        
 
         //Created abstract class and method and 2 fields using an enum generated data type
         abstract public Roshambo generateRashambo();

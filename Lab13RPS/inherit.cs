@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    enum Roshambo
+    class inherit
     {
-        rock, paper, scissors
     }
 }

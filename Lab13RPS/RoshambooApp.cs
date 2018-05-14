@@ -10,9 +10,14 @@ namespace Lab13RPS
     {
         static void Main(string[] args)
         {
-            List<Player> player = new List<Player>();
+            Console.WriteLine("Welcome to Rock Paper Scissors!");
+            Console.WriteLine();
+            Console.WriteLine("Enter your name:");
+            Console.ReadLine();
 
-            player.Add(new Player(""))
+
+
+        
 
         }
     }
