@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    class RockPlayer
+    class RockPlayer : Player
     {
-        private string rock;
+        public RockPlayer()
+        {
+            PlayerName = "Serena Williams";
+        }
 
-        public string Rock { get; set; }
+        public override int generateRoshambo()
+        {
+            return 0;
+        }
     }    
 }

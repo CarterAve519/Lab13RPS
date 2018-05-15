@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    class RoshambooApp
+    class Program
     {
         static void Main(string[] args)
         {
@@ -14,6 +14,12 @@ namespace Lab13RPS
             Console.WriteLine();
             Console.WriteLine("Enter your name:");
             Console.ReadLine();
+
+            
+            while (true)
+            {
+                Console.WriteLine("Which player would you like to play as? Serena or David?");
+            }
 
 
 

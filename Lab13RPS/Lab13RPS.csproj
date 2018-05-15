@@ -42,12 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RoshamboApp.cs" />
     <Compile Include="ThirdPlayer.cs" />
     <Compile Include="Validator.cs" />
     <Compile Include="RandomPlayer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Enums.cs" />
-    <Compile Include="RoshambooApp.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RockPlayer.cs" />
   </ItemGroup>

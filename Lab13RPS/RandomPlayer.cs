@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace Lab13RPS
 {
-    class RandomPlayer
+    class RandomPlayer:Player
     {
-        //public Roshambo value
-        //Generagte that value
 
-        private string rock;
-        private string paper;
-        private string scissors;
+        public RandomPlayer()
+        {
+            PlayerName = "David Beckham";
+        }
 
-        public string Rock { get; set; }
-        public string Paper { get; set; }
-        public string Scissors { get; set; }
+        //Method is overriding GR from the blueprint (Player.cs)
+        public override int generateRoshambo()
+        {
+            Random rnd = new Random();
+            int choice = rnd.Next(0, 2);
+
+            return choice;
+        }
+       
+
+
     }
 }

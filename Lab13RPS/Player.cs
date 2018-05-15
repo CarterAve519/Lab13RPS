@@ -8,14 +8,16 @@ namespace Lab13RPS
 {
     abstract class Player
     {
-        private string name;
-        private Roshambo game;
+        //Defult constructor this is going to be who the computer is.
+        public Player() { }
 
-        public string Name { get; set; }
-        public Roshambo Game { get; set; }
+        public string PlayerName; 
+        
         
 
         //Created abstract class and method and 2 fields using an enum generated data type
-        abstract public Roshambo generateRashambo();
+        abstract public int generateRoshambo();
+
+
     }
 }
