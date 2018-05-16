@@ -15,6 +15,8 @@ namespace Lab13RPS
             
         }
 
+        public object Roshambo { get; internal set; }
+
         //What is the SW returning (picking) her choices
         public override int generateRoshambo()
         {
@@ -44,6 +46,11 @@ namespace Lab13RPS
 
             }
             
+        }
+
+        public static implicit operator ThirdPlayer(int v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

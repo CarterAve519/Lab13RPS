@@ -17,25 +17,68 @@ namespace Lab13RPS
             Yourself.PlayerName = Console.ReadLine();
 
             int input = 0;
+           
+            
             
             while (true)
             {
                 Console.WriteLine("Which player would you like to play as? Serena(1) or David(2)?");
                 input = Convert.ToInt32(Console.ReadLine());
 
-             
+
                 if (input == 1)
                 {
                     RockPlayer Serena = new RockPlayer();
                     Console.WriteLine("You are playing as Serena Williams!");
-                    Console.WriteLine($"Serena picks {(Roshambo)Serena.generateRoshambo()} Your pick is {(Roshambo)Yourself.generateRoshambo()}");
-                    
+                    Console.WriteLine($"Serena picks {(Roshambo)Serena.generateRoshambo()} & Your pick is {(Roshambo)Yourself.generateRoshambo()}");
+                    Console.ReadLine();
+
+                    int RockHand = Serena.generateRoshambo();
+                    int User = Yourself.generateRoshambo();
+
+                    if ((Roshambo)RockHand == (Roshambo)User)
+                    {
+                        Console.WriteLine("***Draw!***");
+                    }
+                    else if ((Roshambo)RockHand == (Roshambo)0 && (Roshambo)User == (Roshambo)1)
+                    {
+                        Console.WriteLine("Yay. You Win");
+                    }
+                    else if ((Roshambo)RockHand == (Roshambo)0 && (Roshambo)User == (Roshambo)2)
+                    {
+                        Console.WriteLine("Sorry! You lose!");
+                    }
                 }
                 else if (input == 2)
                 {
                     RandomPlayer David = new RandomPlayer();
                     Console.WriteLine("You are playing as David Beckham!");
-                    Console.WriteLine($"Serena picks {(Roshambo)David.generateRoshambo()} Your pick is {(Roshambo)Yourself.generateRoshambo()}");
+                    int ComputerHand = David.generateRoshambo();
+                    int User = Yourself.generateRoshambo();
+
+                    Console.WriteLine($"David picks {(Roshambo)ComputerHand} & Your pick is {(Roshambo)User}");
+
+
+                    if ((Roshambo)ComputerHand == (Roshambo)User)
+                    {
+                        Console.WriteLine("***Draw!***");
+                    }
+                    else if ((Roshambo)ComputerHand == (Roshambo)0 && (Roshambo)User == (Roshambo)1)
+                    {
+                        Console.WriteLine("Yay! You win.");
+                    }
+                    else if ((Roshambo)ComputerHand == (Roshambo)0 && (Roshambo)User == (Roshambo)2)
+                    {
+                        Console.WriteLine("Sorry! You lose!");
+                    }
+                    else if ((Roshambo)ComputerHand == (Roshambo)1 && (Roshambo)User == (Roshambo)2)
+                    {
+                        Console.WriteLine("Yay! You win.");
+                    }
+                    else if ((Roshambo)ComputerHand == (Roshambo)1 && (Roshambo)User == (Roshambo)0)
+                    {
+                        Console.WriteLine("Sorry! You lose!");
+                    }
                 }
                 else
                 {
@@ -44,8 +87,14 @@ namespace Lab13RPS
                 }
 
                 
+                
             }
 
+            
+            
+            
+
+            
 
 
 

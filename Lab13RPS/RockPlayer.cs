@@ -13,6 +13,8 @@ namespace Lab13RPS
             PlayerName = "Serena Williams";
         }
 
+        public object Roshambo { get; internal set; }
+
         public override int generateRoshambo()
         {
             return 0;

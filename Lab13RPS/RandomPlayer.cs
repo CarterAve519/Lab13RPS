@@ -14,6 +14,8 @@ namespace Lab13RPS
             PlayerName = "David Beckham";
         }
 
+        public object Roshambo { get; internal set; }
+
         //Method is overriding GR from the blueprint (Player.cs)
         public override int generateRoshambo()
         {
